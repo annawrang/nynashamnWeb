@@ -1,0 +1,120 @@
+/* BOOTSTRAP */
+
+.rubrik{
+  background-image: url("../assets/images/layout/header-sky.jpg");
+  padding: 10px 10px;
+  background-size: cover;
+}
+
+.main{
+   box-shadow: 0 0 5px 2px #8aa5d1;
+   border-radius: 7px 7px 7px 7px;
+    padding: 10px;
+}
+
+.galleri{
+   box-shadow: 0 0 5px 2px #8aa5d1;
+    border-radius: 7px 7px 2px 2px;
+    padding-bottom: 10px;
+}
+
+figcaption{
+    font-size: 14px;
+}
+
+.container{
+    padding-top: 20px;
+}
+.navbar a{
+    color: darkgray;
+}
+.navbar a.nav-item-active{
+    color: black;
+}
+.navbar a:hover{
+    color: black !important; 
+}
+.navbar{
+    max-width: 500px;
+}
+.main-status{
+   box-shadow: 0 0 5px 2px #8aa5d1;
+   border-radius: 7px 7px 7px 7px;
+   padding: 10px; 
+padding-bottom: 15px;
+    
+    
+}
+.main-status h2{
+    font-size: 30px;
+}
+
+.main-contact{
+    padding: -20px;
+}
+footer{
+    padding: 20px;
+}
+footer a{
+    color: coral;
+}
+.btn-danger{
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input{
+    padding-left: 2px;
+}
+
+
+.åker-från{
+    margin-left: -5px;
+    color: dimgrey;
+}
+
+#tableweather{
+}
+
+input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    width: 1050px;
+}
+
+@media (max-width: 1199px){
+    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    width: 900px;
+    }
+}
+
+@media (max-width: 991px){
+    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    width: 650px;
+    }
+}
+
+
+@media (max-width: 767px){
+    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+        width: 460px;
+    }
+    nicksta-galleri.pic{
+        display: inline;
+    }
+}
+
+
+@media (max-width: 575px){
+    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    width: 450px; 
+    }
+        nicksta-galleri.pic{
+        display: inline;
+    }
+}
+
+@media (max-width: 691px){
+        nicksta-galleri.pic{
+        display: inline;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nickstabadet</title>
+    <meta name="viewport" content="width=device-width, initial scale 1.0"/>
+    <meta name="author" content="Anna Wrang"/>
+    <meta name="charset" content="utf-8"/>
+    <meta name="keywords" content="Nickstabadet, camping, Nynäshamn, bad, sommar, semester"/>
+    <meta name="description" content="Nickstabadet är en campingplats i Nynäshamn."/>
+    <link rel="stylesheet" href="styles/general.css"/>
+ 
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header class="rubrik">
+    <h1>Nickstabadet</h1>
+    <p>Ett soligt sommarbad</p>
+    </header>
+        <div class="bg-white">
+            
+                 <nav class="navbar bg-white navbar-light navbar-left">
+         
+                     <a class="nav-item nav-link" href="index.html">Hem</a>
+                <a href="contact.html" class="selected nav-item-active nav-item nav-link ">Kontakt</a>
+                <a href="status.html" class="nav-item nav-link">Väder</a>
+                <a href="#" class="back nav-item nav-link ">Tillbaka</a>
+       
+        </nav>  
+            
+        </div>
+    
+                <div class="bg-light">
+<div class="container"> <!-- bs -->
+    
+    <section class="main row bg-white col-12 main-contact">
+        <h2>Lämna dina synpunkter här!</h2>
+        <form role="form">
+            <div class="form-group">
+                <div class="row ml-1">
+            <label for="rubrik_field">Rubrik</label>
+                    </div>
+                <div class="row ml-1">
+            <input class="form-control contact-text-input" id="rubrik_field" type="text" placeholder="Rubrik" required>
+            </div>
+            </div>
+            
+            <div class="row ml-1">
+                <div class="form-group">
+            <label for="beskrivning_field">Beskrivning</label>
+            <textarea class="form-control contact-text-input" rows="3" id="beskrivning_field" type="text">
+                    </textarea>
+            </div>
+                </div>
+                
+            
+            <div class="row ml-1">
+                <div class="form-group">
+            <label for="ärende_field">Ärende</label>
+            <select id="ärende_field">
+                <option>Strand</option>
+                <option>Camping</option>
+                <option>Övrigt</option>
+            </select>
+            </div>
+            </div>
+            
+            <div class="row ml-1">
+                <div class="form-group">
+                <fieldset>
+                    <legend>Vill du få svar på din synpunkt?</legend>
+                <input name="want_answer" id="svar_yes" type="radio">
+                    <label for="svar_yes">Yes</label>
+                <input name="want_answer" id="svar_no" type="radio" checked>
+                    <label for="svar_no">No</label>
+                    </fieldset>
+            </div>
+            </div>
+            
+            <div class="row ml-1">
+                <div class="form-group">
+                <label for="email_field">Email</label>
+                <input class="form-control contact-text-input" id="email_field" type="text" placeholder="example@email.com">
+            </div>
+            </div>
+            <div class="row ml-1">
+            <button id="send-button" type="submit" class="btn-danger">Skicka</button>
+                </div>
+        </form>
+    </section>
+                    </div>
+    </div>
+                <div class="bg-light">
+        <div class="text-center">
+    <footer>
+    <p>
+        Vill du veta mer? Kontakta <a href="mailto:anna.wrang@gmail.com">anna.wrang@gmail.com</a>
+    </p>
+</footer>
+                    </div>
+                    </div>
+</body>
+    
+    <script src="app.js"></script>
+</html>

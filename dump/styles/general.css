@@ -1,0 +1,143 @@
+@import url(“reset.css”);
+
+.rubrik{
+    display: none;
+    color: #242291;
+    font-family: verdana;
+    background-image: url("../assets/images/layout/header-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 10px; 
+}
+
+body{
+    font-family: serif;
+    background-color: #e8eaed;
+}
+
+figcaption{
+    font-size: 14px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+nav li{
+    line-height: 20px;
+    display: inline-block;
+}
+.back{
+    position: absolute;
+    right: 0px;
+    margin-right: 7px;
+}
+nav ul a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+nav ul li a:active{
+    background-color: deepskyblue;
+}
+
+ nav ul li.selected{
+    background-color: deepskyblue;
+    color: aqua;
+}
+
+
+
+h2, h3, ul, p, figcaption, table, th, td, input, label, button, option{
+    font-family: sans-serif, aria, helvetica, verdana;
+}
+
+
+.galleri{
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 5px 2px #8aa5d1;
+}
+
+
+.galleri figure{
+    padding-bottom: 20px;
+}
+
+.galleri h2{
+    padding-top: 10px;
+}
+
+.main{
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 7px 7px 2px 2px;
+    padding: 15px;
+    border-top-style: solid;
+    border-top-color: #8aa5d1;
+    border-top-width: 5px;
+    box-shadow: 0 0 5px 2px #8aa5d1;
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+footer{
+position: relative;
+    right:0;
+    left: 0;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+h2, h3{
+    color: darkseagreen;
+}
+
+/* FÖR STÖRRE SKÄRM ÄN 650 PX - FAST BRYTPUNKTEN ÄR FEL!!! bryter på 585px*/ 
+
+ @media screen AND (min-width: 650px){
+
+    .rubrik{
+        display: block;
+    }
+    .main{
+        width: 60%;
+        margin-top: 40px;
+        background-color: white;
+     }
+    .galleri{
+        float: right;
+        width: 25%;
+        margin-right: 30px;
+        margin-top: 40px;
+        text-align: center;
+        align-content: center;
+
+    }
+    .galleri figure .galleri_img{
+     max-width: 120%;  
+        text-align: center;
+        
+    }
+     
+     nav ul{
+         background-color: black;
+     }
+} 
