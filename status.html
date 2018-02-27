@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <link rel="stylesheet"
+    <link rel="stylesheet"
  href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css">
 
     <script src="app.js"></script>
@@ -24,88 +24,80 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
-<body onload="getWeather()">
-    <header class="rubrik">
-        <h1>Nickstabadet</h1>
-        <p>Ett soligt sommarbad</p>
-    </header>
-        <div class="bg-white">
-            
-                 <nav class="navbar bg-white navbar-light navbar-left">
-         
-                     <a class="nav-item nav-link" href="index.html">Hem</a>
-                <a href="contact.html" class="nav-item nav-link ">Kontakt</a>
-                <a href="status.html" class="selected nav-item-active nav-item nav-link">Väder</a>
-                <a href="#" class="back nav-item nav-link ">Tillbaka</a>
-       
-        </nav>  
-            
-        </div>
+    <body onload="getWeather()">
+        <header class="rubrik">
+            <h1>Nickstabadet</h1>
+            <p>Ett soligt sommarbad</p>
+        </header>
+            <div class="bg-white">
+                <nav class="navbar bg-white navbar-light navbar-left">
+                    <a class="nav-item nav-link" href="index.html">Hem</a>
+                    <a href="contact.html" class="nav-item nav-link ">Kontakt</a>
+                    <a href="status.html" class="selected nav-item-active nav-item nav-link">Väder</a>
+                    <a href="#" class="back nav-item nav-link ">Tillbaka</a>
+                </nav>  
+            </div>
             <div class="bg-light">
-<div class="container"> <!-- bs -->
-    <div class="row justify-content-between">
-        <div class="col-md-5 col-sm-11 col-xs-11 ml-xs-1 ml-sm-2 mb-4 main-status status-1 order-md-2 bg-white">
-        <article>
-            <h2>Vädret på Nicksta</h2>
-            <table class="table table-responsive table-weather table-striped" id="table-weather">
-                <thead>
-                    <tr class="table-dark table-danger">
-                        <th scope="col">Klocka</th>
-                        <th scope="col">Väder</th>
-                        <th scope="col">Värme</th>
-                        <th scope="col">Vind</th>
-                    </tr>
-                </thead>
-            </table>
-        </article>
-    </div>
-        <div class="col-md-6 col-sm-11 ml-sm-2 main-status status-2 order-md-1 bg-white">
-        <article>
-            <h2>Åker tågen?</h2>
-            <div><div class="row col">
-                <label for="destination_field">Jag åker ifrån..</label>
+            <div class="container"> <!-- bs -->
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-sm-11 col-xs-11 ml-xs-1 ml-sm-2 mb-4 main-status status-1 order-md-2 bg-white">
+                    <article>
+                        <h2>Vädret på Nicksta</h2>
+                        <table class="table table-responsive table-weather table-striped" id="table-weather">
+                            <thead>
+                                <tr class="table-dark table-danger">
+                                    <th scope="col">Klocka</th>
+                                    <th scope="col">Väder</th>
+                                    <th scope="col">Värme</th>
+                                    <th scope="col">Vind</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </article>
+                </div>
+            <div class="col-md-6 col-sm-11 ml-sm-2 main-status status-2 order-md-1 bg-white">
+            <article>
+                <h2>Åker tågen?</h2>
+                <div class="row col">
+                    <label for="destination_field">Jag åker ifrån..</label>
                 </div>
                 <div class="row col">
-                <input class="text-input"
-                       id="destination_field"
-                       type="text"
-                       required
-                       maxlength="25"
-                       placeholder="City..."/>
-                    </div>
-            </div>
-            <button id="search-button" class="btn-danger" type="submit">Sök..</button>
-            <div>
-                <table class="table table-head table-striped">
-                    <thead>
-                        <tr class="table-dark table-danger">
-                            <th scope="col">Nr</th>
-                            <th scope="col">Avgår</th>
-                            <th scope="col">Ankommer</th>
-                        </tr>
-                    </thead>
-                    <tbody id="train-table">  
-
-                    </tbody>
-                </table>
-                <p>Inga problem i trafiken</p>
-            </div>
-            <p id="going-from" class="åker-från">Åker från</p>
-        </article>
-        </div>
-    </div>
+                    <input class="text-input"
+                           id="destination_field"
+                           type="text"
+                           required
+                           maxlength="25"
+                           placeholder="City..."/>
                 </div>
-                </div>
+                <button id="search-button" class="btn-danger" type="submit">Sök..</button>
+                <div>
+                    <table class="table table-head table-striped">
+                        <thead>
+                            <tr class="table-dark table-danger">
+                                <th scope="col">Nr</th>
+                                <th scope="col">Avgår</th>
+                                <th scope="col">Ankommer</th>
+                            </tr>
+                        </thead>
+                        <tbody id="train-table">  
 
+                        </tbody>
+                    </table>
+                    <p>Inga problem i trafiken</p>
+                </div>
+                <p id="going-from" class="åker-från">Åker från</p>
+            </article>
+            </div>
+            </div>
+            </div>
+            </div>
             <div class="bg-light">
-        <div class="text-center">
-    <footer>
-    <p>Vill du veta mer? Kontakta <a href="mailto:anna.wrang@gmail.com">anna.wrang@gmail.com</a></p>
-</footer>
+                <div class="text-center">
+                <footer>
+                    <p>Vill du veta mer? Kontakta <a href="mailto:anna.wrang@gmail.com">anna.wrang@gmail.com</a></p>
+                </footer>
                 </div>
-    </div>
-    <script src="app.js"></script>
-</body>
-    
-    
+            </div>
+            <script src="app.js"></script>
+    </body> 
 </html>
