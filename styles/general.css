@@ -105,8 +105,21 @@ input.contact-text-input, textarea.contact-text-input, #ärende_field{
 
 
 @media (max-width: 575px){
-    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    input.contact-text-input, textarea.contact-text-input{
     width: 450px; 
+    }
+    
+    #ärende_field {
+        width: 300px;
+    }
+        nicksta-galleri.pic{
+        display: inline;
+    }
+}
+
+@media (max-width: 566px){
+    input.contact-text-input, textarea.contact-text-input, #ärende_field{
+    width: 350px; 
     }
         nicksta-galleri.pic{
         display: inline;

@@ -40,10 +40,12 @@ var getWeather = function () {
     var ajax = new XMLHttpRequest();
     var city = 'Nynashamn';
     var apikey = '1399096a4711557fc517d1808cbd6c93';
-    ajax.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?q=' + city +
+    ajax.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?q=' + city +
         '&APPID=' + apikey, true);
 
 
+
+        
     ajax.onload = function () {
         if (this.readyState === 4) {
             if (this.status === 200) {
